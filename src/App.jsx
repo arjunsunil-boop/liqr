@@ -1,11 +1,29 @@
 import { useState } from 'react'
 import Home from './components/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import DelMod from './components/DelMod'
+import AddLiq from './components/AddLiq'
+import Login from './components/Login'
+import Signup from './components/Signup'
+import ViewLiq from './components/ViewLiq'
+
+
 
 function App() {
 
   return (
     <>
-      <Home/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/del" element={<DelMod/>}/>
+          <Route path="/add" element={<AddLiq/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/liq/:id" element={<ViewLiq/>}/>
+        </Routes>
+      
+      </BrowserRouter>
     </>
   )
 }
