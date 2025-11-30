@@ -4,8 +4,11 @@ import bcrypt from 'bcryptjs';
 import User from './models/Users.model.js';
 import Product from "./models/Products.model.js";
 import dotenv from 'dotenv';
+import cors from "cors";
+
 dotenv.config();
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const uri = process.env.MONGODB_URI
