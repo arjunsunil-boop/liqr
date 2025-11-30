@@ -1303,87 +1303,131 @@ const Home = () => {
     },
   ]);
   return (
-    <div>
-      <Navbar1 />
-      <Container>
-        <Row>
-          {data.map((index, idx) => {
-            return (
-              <Col
-                key={idx}
-                xs={12}
-                sm={6}
-                md={4}
-                lg={2}
-                xl={2}
-                xxl={2}
-                className="mb-4"
-              >
-                <Card
-                  style={{
-                    width: "18rem",
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                    boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
-                    textAlign: "center",
-                    transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                    willChange: "transform",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.03)";
-                    e.currentTarget.style.boxShadow =
-                      "0 10px 25px rgba(0,0,0,0.25)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                    e.currentTarget.style.boxShadow =
-                      "0 6px 20px rgba(0,0,0,0.15)";
-                  }}
+    <>
+      <div>
+        <Navbar1 />
+      </div>
+      <div style={{ backgroundColor: "#F9F8F6" }}>
+        <br></br>
+        <Container>
+          <Row>
+            {data.map((index, idx) => {
+              return (
+                <Col
+                  key={idx}
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  lg={2}
+                  xl={3}
+                  xxl={3}
+                  className="mb-4"
                 >
-                  <Card.Img
-                    variant="top"
-                    src="image.png"
+                  <Card
+                    className="singleCard"
                     style={{
-                      height: "340px",
-                      objectFit: "cover",
-                      display: "block", // removes tiny inline-gap
-                      width: "100%",
+                      backgroundColor: "#EFE9E3",
+                      border: "none",
                     }}
-                  />
-
-                  <Card.Body style={{ padding: "1.5rem" }}>
-                    <Card.Title
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "scale(1.03)";
+                      e.currentTarget.style.boxShadow =
+                        "0 10px 25px rgba(0,0,0,0.25)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "scale(1)";
+                      e.currentTarget.style.boxShadow =
+                        "0 6px 20px rgba(0,0,0,0.15)";
+                    }}
+                  >
+                    <Card.Img
+                      variant="top"
+                      src="placeholder.png"
                       style={{
-                        fontSize: "1.2rem",
-                        fontWeight: "bold",
-                        marginBottom: "1rem",
-                        color: "#333",
+                        height: "340px",
+                        objectFit: "cover",
+                        display: "block",
+                        width: "100%",
+                        backgroundColor: "#D9CFC7",
+                      }}
+                    />
+
+                    <Card.Body
+                      style={{
+                        padding: "1.5rem",
+                        backgroundColor: "#ffffffff",
                       }}
                     >
-                      {index.title}
-                    </Card.Title>
+                      
+                      <div
+                        style={{
+                          fontSize: "0.85rem",
+                          color: "#7d746b", // soft muted tone matching palette
+                          marginBottom: "0.4rem",
+                          fontWeight: "500",
+                        }}
+                      >
+                        Brand: {index.brand}
+                      </div>
 
-                    <Dropdown>
-                      <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        {index.items[0].ml} ml  -  ₹{Math.round(Number(index.items[0].price))}
-                      </Dropdown.Toggle>
+                      <Card.Title
+                        style={{
+                          fontSize: "1.2rem",
+                          fontWeight: "bold",
+                          marginBottom: "1rem",
+                          color: "#000000",
+                          height: "48px",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                        }}
+                      >
+                        {index.title}
+                      </Card.Title>
 
-                      <Dropdown.Menu>
-                        {index.items.map((item, i) => (
-                          <Dropdown.Item key={i}>
-                            {item.ml} ml   -  ₹{Math.round(Number(item.price))}
-                          </Dropdown.Item>
-                        ))}
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Card.Body>
-                </Card>
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
-    </div>
+                      <Dropdown drop="up">
+                        <Dropdown.Toggle
+                          style={{
+                            color: "#000000ff",
+                            backgroundColor: "#876c6c34",
+                            border: "none",
+                          }}
+                          id="dropdown-basic"
+                        >
+                          {index.items[0].ml} ml - ₹
+                          {Math.round(Number(index.items[0].price))}
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu
+                          style={{
+                            backgroundColor: "#C9B59C",
+                            color: "#F9F8F6",
+                          }}
+                        >
+                          {index.items.map((item, i) => (
+                            <Dropdown.Item
+                              key={i}
+                              style={{
+                                color: "#F9F8F6",
+                                backgroundColor: "#C9B59C",
+                              }}
+                            >
+                              {item.ml} ml - ₹{Math.round(Number(item.price))}
+                            </Dropdown.Item>
+                          ))}
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      </div>
+    </>
   );
 };
 
