@@ -46,8 +46,7 @@ const ProductSchema = mongoose.Schema({
   },
   img: {
     type: String,  
-    default:"https://drive.google.com/u/0/drive-viewer/AKGpihZbbl8W-A1fjbhTbwg691kdLia1_daTXouugfdiuG633tvXIqPfZa_lAS70wumat6ck1VSdQNieRny1tqz_cxg_DlgUowG1Ut4=s1600-rw-v1",        // URL to product image
-    trim: true,
+    default:"https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg"
   }
 }, { timestamps: true }
 )

@@ -90,12 +90,17 @@ app.post('/addProduct', async (req, res) => {
 
 })
 
-app.get('/viewProducts',(req,res)=>{
+app.get('/viewProducts',async (req,res)=>{
     try {
-       console.log("first") 
+       const prducts = await Product.find({})
+       res.status(200).json(prducts)
     } catch (error) {
-        console.log("first")
-        
+       console.error(error);
+    res.status(500).json({
+      message: "Failed to retrieve products",
+      error: error.message
+    });
+
     }
 })
 
