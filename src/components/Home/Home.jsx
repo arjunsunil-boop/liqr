@@ -11,1314 +11,81 @@ import Dropdown from "react-bootstrap/Dropdown";
 const Home = () => {
   const [data, changeData] = useState([
     {
-      title: "SOUTHERN CHOICE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
+      _id: "692c01fab2ee2f6e0cfeeca0",
+      brand: "Southern Choice",
+      productName: "Southern Choice Brandy",
+      category: "Brandy",
+      currency: "INR",
+      available: true,
+      pricePerMl: [
+        { ml: 750, price: 1550 },
+        { ml: 375, price: 780 },
+        { ml: 180, price: 350 },
       ],
+      img: "https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg",
+      createdAt: "2025-11-30T08:36:10.382Z",
+      updatedAt: "2025-11-30T08:36:10.382Z",
+      __v: 0,
     },
     {
-      title: "GB PREMIUM BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "340.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
+      _id: "692c01fab2ee2f6e0cfeeca2",
+      brand: "GB",
+      productName: "Premium Brandy",
+      category: "Brandy",
+      currency: "INR",
+      available: true,
+      pricePerMl: [
+        { ml: 750, price: 1380 },
+        { ml: 375, price: 700 },
+        { ml: 180, price: 340 },
+        { ml: 500, price: 630 },
+        { ml: 1000, price: 1260 },
       ],
+      img: "https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg",
+      createdAt: "2025-11-30T08:36:10.448Z",
+      updatedAt: "2025-11-30T08:36:10.448Z",
+      __v: 0,
     },
     {
-      title: "SOUTHERN CHOICE PREMIUM BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
+      _id: "692c01fab2ee2f6e0cfeeca4",
+      brand: "Southern Choice",
+      productName: "Southern Choice Premium Brandy",
+      category: "Brandy",
+      currency: "INR",
+      available: true,
+      pricePerMl: [
+        { ml: 750, price: 1920 },
+        { ml: 375, price: 970 },
+        { ml: 180, price: 420 },
       ],
-    },
-    {
-      title: "SPI M GOLD INDIAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO SPECIAL INDIAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO SPECIAL LIVE INDIAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI M GOLD LIVE INDIAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER WHITE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE LIVE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE WHITE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM LIVE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-      ],
-    },
-    {
-      title: "180 48",
-      items: [
-        {
-          ml: "50",
-          price: "420.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
-        {
-          ml: "330",
-          price: "250.00",
-        },
-        {
-          ml: "500",
-          price: "490.00",
-        },
-        {
-          ml: "1000",
-          price: "990.00",
-        },
-        {
-          ml: "750",
-          price: "280.00",
-        },
-        {
-          ml: "500",
-          price: "700.00",
-        },
-        {
-          ml: "1000",
-          price: "1300.00",
-        },
-      ],
-    },
-    {
-      title: "NICOL'S BLACK & GOLD FRENCH BRANDY VSOP",
-      items: [
-        {
-          ml: "750",
-          price: "1360.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-        {
-          ml: "500",
-          price: "830.00",
-        },
-        {
-          ml: "1000",
-          price: "1630.00",
-        },
-      ],
-    },
-    {
-      title: "NICOL'S XCEL RESERVE FRENCH BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "1290.00",
-        },
-        {
-          ml: "375",
-          price: "650.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "1000",
-          price: "1670.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO SPECIAL WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI M GOLD WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
-      ],
-    },
-    {
-      title: "1943 BLACK & GOLD RARE PREMIUM WHISKY",
-      items: [
-        {
-          ml: "750",
-          price: "1450.00",
-        },
-        {
-          ml: "375",
-          price: "720.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE WHITE RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "500 18",
-      items: [
-        {
-          ml: "90",
-          price: "800.00",
-        },
-        {
-          ml: "375",
-          price: "450.00",
-        },
-        {
-          ml: "1000",
-          price: "880.00",
-        },
-      ],
-    },
-    {
-      title: "SPI M GOLD RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER WHITE RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE LIVE WHITE RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE LEMON RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM WHITE RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
-      ],
-    },
-    {
-      title: "NICOL'S COCO CARIB COCONUT RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "710.00",
-        },
-        {
-          ml: "180",
-          price: "370.00",
-        },
-      ],
-    },
-    {
-      title: "NICOL'S BLACK BANDIT ORIGINAL SPICED RUM",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "710.00",
-        },
-        {
-          ml: "180",
-          price: "370.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER GIN",
-      items: [
-        {
-          ml: "750",
-          price: "1300.00",
-        },
-        {
-          ml: "375",
-          price: "660.00",
-        },
-        {
-          ml: "180",
-          price: "310.00",
-        },
-        {
-          ml: "500",
-          price: "580.00",
-        },
-        {
-          ml: "1000",
-          price: "1160.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE GIN",
-      items: [
-        {
-          ml: "750",
-          price: "1470.00",
-        },
-        {
-          ml: "375",
-          price: "740.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO SPECIAL VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI METRO SPECIAL ORANGE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI M GOLD VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "SPI M GOLD ORANGE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1060.00",
-        },
-        {
-          ml: "375",
-          price: "570.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "800.00",
-        },
-        {
-          ml: "1000",
-          price: "1360.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "CB CHARLZ N BEAVER ORANGE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1380.00",
-        },
-        {
-          ml: "375",
-          price: "700.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "630.00",
-        },
-        {
-          ml: "1000",
-          price: "1260.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE LIVE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE ORANGE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1550.00",
-        },
-        {
-          ml: "375",
-          price: "780.00",
-        },
-        {
-          ml: "180",
-          price: "350.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-        {
-          ml: "180",
-          price: "420.00",
-        },
-      ],
-    },
-    {
-      title: "SOUTHERN CHOICE PREMIUM ORANGE VODKA",
-      items: [
-        {
-          ml: "750",
-          price: "1920.00",
-        },
-        {
-          ml: "375",
-          price: "970.00",
-        },
-      ],
-    },
-    {
-      title: "NICOL'S V VODKA PREMIUM GRAIN",
-      items: [
-        {
-          ml: "750",
-          price: "1290.00",
-        },
-        {
-          ml: "375",
-          price: "660.00",
-        },
-        {
-          ml: "180",
-          price: "340.00",
-        },
-      ],
-    },
-    {
-      title: "MOOD MAKER BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "630.00",
-        },
-        {
-          ml: "375",
-          price: "300.00",
-        },
-        {
-          ml: "180",
-          price: "160.00",
-        },
-        {
-          ml: "500",
-          price: "390.00",
-        },
-        {
-          ml: "1000",
-          price: "580.00",
-        },
-      ],
-    },
-    {
-      title: "SUPERMAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "570.00",
-        },
-        {
-          ml: "375",
-          price: "290.00",
-        },
-        {
-          ml: "180",
-          price: "160.00",
-        },
-        {
-          ml: "500",
-          price: "380.00",
-        },
-        {
-          ml: "1000",
-          price: "700.00",
-        },
-      ],
-    },
-    {
-      title: "JAMES MC GILL BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "700.00",
-        },
-        {
-          ml: "375",
-          price: "350.00",
-        },
-        {
-          ml: "180",
-          price: "180.00",
-        },
-        {
-          ml: "500",
-          price: "440.00",
-        },
-        {
-          ml: "1000",
-          price: "850.00",
-        },
-      ],
-    },
-    {
-      title: "LEMOUNT WHITE BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "990.00",
-        },
-      ],
-    },
-    {
-      title: "375 24",
-      items: [
-        {
-          ml: "200",
-          price: "490.00",
-        },
-        {
-          ml: "180",
-          price: "250.00",
-        },
-        {
-          ml: "500",
-          price: "590.00",
-        },
-        {
-          ml: "1000",
-          price: "1100.00",
-        },
-        {
-          ml: "250",
-          price: "600.00",
-        },
-        {
-          ml: "180",
-          price: "300.00",
-        },
-        {
-          ml: "500",
-          price: "670.00",
-        },
-        {
-          ml: "1000",
-          price: "1300.00",
-        },
-        {
-          ml: "500",
-          price: "650.00",
-        },
-        {
-          ml: "180",
-          price: "330.00",
-        },
-        {
-          ml: "500",
-          price: "870.00",
-        },
-        {
-          ml: "1000",
-          price: "1710.00",
-        },
-      ],
-    },
-    {
-      title: "LEMOUNT GOLDEN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "900.00",
-        },
-        {
-          ml: "375",
-          price: "440.00",
-        },
-        {
-          ml: "180",
-          price: "230.00",
-        },
-        {
-          ml: "500",
-          price: "570.00",
-        },
-        {
-          ml: "1000",
-          price: "990.00",
-        },
-      ],
-    },
-    {
-      title: "WELLINGTON ISLAND INDIAN BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "900.00",
-        },
-        {
-          ml: "375",
-          price: "420.00",
-        },
-        {
-          ml: "180",
-          price: "200.00",
-        },
-        {
-          ml: "500",
-          price: "480.00",
-        },
-        {
-          ml: "1000",
-          price: "950.00",
-        },
-      ],
-    },
-    {
-      title: "BOMBAY SPECIAL DOCTORS BRANDY",
-      items: [
-        {
-          ml: "750",
-          price: "490.00",
-        },
-        {
-          ml: "375",
-          price: "280.00",
-        },
-        {
-          ml: "180",
-          price: "170.00",
-        },
-        {
-          ml: "500",
-          price: "400.00",
-        },
-        {
-          ml: "1000",
-          price: "720.00",
-        },
-      ],
-    },
-    {
-      title: "JAMAICAN MAGIC RUM",
-      items: [
-        {
-          ml: "750",
-          price: "630.00",
-        },
-        {
-          ml: "375",
-          price: "300.00",
-        },
-        {
-          ml: "180",
-          price: "160.00",
-        },
-        {
-          ml: "500",
-          price: "390.00",
-        },
-        {
-          ml: "1000",
-          price: "580.00",
-        },
-      ],
-    },
-    {
-      title: "SUPERMAN RUM",
-      items: [
-        {
-          ml: "750",
-          price: "570.00",
-        },
-        {
-          ml: "375",
-          price: "290.00",
-        },
-        {
-          ml: "180",
-          price: "160.00",
-        },
-        {
-          ml: "500",
-          price: "380.00",
-        },
-        {
-          ml: "1000",
-          price: "700.00",
-        },
-      ],
-    },
-    {
-      title: "JAMES MC GILL RUM",
-      items: [
-        {
-          ml: "750",
-          price: "700.00",
-        },
-        {
-          ml: "375",
-          price: "200.00",
-        },
-        {
-          ml: "180",
-          price: "100.00",
-        },
-        {
-          ml: "500",
-          price: "260.00",
-        },
-        {
-          ml: "1000",
-          price: "550.00",
-        },
-      ],
+      img: "https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg",
+      createdAt: "2025-11-30T08:36:10.496Z",
+      updatedAt: "2025-11-30T08:36:10.496Z",
+      __v: 0,
     },
   ]);
+
+  const fallbackImg = "https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg";
+
   return (
     <>
       <div>
         <Navbar1 />
       </div>
-      <div style={{ backgroundColor: "#F9F8F6" }}>
-        <br></br>
+      <div style={{ backgroundColor: "#F9F8F6", minHeight: "100vh", paddingBottom: 32 }}>
+        <br />
         <Container>
           <Row>
             {data.map((index, idx) => {
+              const firstPrice = index.pricePerMl && index.pricePerMl.length ? index.pricePerMl[0] : null;
+
               return (
                 <Col
-                  key={idx}
+                  key={index._id || idx}
                   xs={12}
                   sm={6}
                   md={4}
-                  lg={2}
+                  lg={3}
                   xl={3}
                   xxl={3}
                   className="mb-4"
@@ -1328,21 +95,23 @@ const Home = () => {
                     style={{
                       backgroundColor: "#EFE9E3",
                       border: "none",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = "scale(1.03)";
-                      e.currentTarget.style.boxShadow =
-                        "0 10px 25px rgba(0,0,0,0.25)";
+                      e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.25)";
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.transform = "scale(1)";
-                      e.currentTarget.style.boxShadow =
-                        "0 6px 20px rgba(0,0,0,0.15)";
+                      e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.15)";
                     }}
                   >
                     <Card.Img
                       variant="top"
-                      src="placeholder.png"
+                      src="https://i.ibb.co/RGMWTLsL/Liqr-bottle.jpg"
+                      
                       style={{
                         height: "340px",
                         objectFit: "cover",
@@ -1356,69 +125,84 @@ const Home = () => {
                       style={{
                         padding: "1.5rem",
                         backgroundColor: "#ffffffff",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        flex: 1,
                       }}
                     >
-                      
-                      <div
-                        style={{
-                          fontSize: "0.85rem",
-                          color: "#7d746b", // soft muted tone matching palette
-                          marginBottom: "0.4rem",
-                          fontWeight: "500",
-                        }}
-                      >
-                        Brand: {index.brand}
+                      <div>
+                        <div
+                          style={{
+                            fontSize: "0.85rem",
+                            color: "#7d746b",
+                            marginBottom: "0.4rem",
+                            fontWeight: "500",
+                          }}
+                        >
+                          Brand: {index.brand}
+                        </div>
+
+                        <Card.Title
+                          style={{
+                            fontSize: "1.1rem",
+                            fontWeight: "700",
+                            marginBottom: "1rem",
+                            color: "#000000",
+                            height: "48px",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                          }}
+                        >
+                          {index.productName}
+                        </Card.Title>
                       </div>
 
-                      <Card.Title
-                        style={{
-                          fontSize: "1.2rem",
-                          fontWeight: "bold",
-                          marginBottom: "1rem",
-                          color: "#000000",
-                          height: "48px",
-                          overflow: "hidden",
-                          textOverflow: "ellipsis",
-                          display: "-webkit-box",
-                          WebkitLineClamp: 2,
-                          WebkitBoxOrient: "vertical",
-                        }}
-                      >
-                        {index.title}
-                      </Card.Title>
+                      <div style={{ marginTop: 8 }}>
+                        <Dropdown drop="up">
+                          <Dropdown.Toggle
+                            style={{
+                              color: "#F9F8F6",
+                              backgroundColor: "#C9B59C",
+                              border: "none",
+                              fontWeight: 700,
+                            }}
+                            id={`dropdown-${idx}`}
+                          >
+                            {firstPrice ? `${firstPrice.ml} ml - ₹${Math.round(Number(firstPrice.price))}` : "No price"}
+                          </Dropdown.Toggle>
 
-                      <Dropdown drop="up">
-                        <Dropdown.Toggle
-                          style={{
-                            color: "#000000ff",
-                            backgroundColor: "#876c6c34",
-                            border: "none",
-                          }}
-                          id="dropdown-basic"
-                        >
-                          {index.items[0].ml} ml - ₹
-                          {Math.round(Number(index.items[0].price))}
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu
-                          style={{
-                            backgroundColor: "#C9B59C",
-                            color: "#F9F8F6",
-                          }}
-                        >
-                          {index.items.map((item, i) => (
-                            <Dropdown.Item
-                              key={i}
-                              style={{
-                                color: "#F9F8F6",
-                                backgroundColor: "#C9B59C",
-                              }}
-                            >
-                              {item.ml} ml - ₹{Math.round(Number(item.price))}
-                            </Dropdown.Item>
-                          ))}
-                        </Dropdown.Menu>
-                      </Dropdown>
+                          <Dropdown.Menu
+                            style={{
+                              backgroundColor: "#C9B59C",
+                              color: "#F9F8F6",
+                              minWidth: 160,
+                            }}
+                          >
+                            {index.pricePerMl && index.pricePerMl.length ? (
+                              index.pricePerMl.map((item, i) => (
+                                <Dropdown.Item
+                                  key={i}
+                                  style={{
+                                    color: "#F9F8F6",
+                                    backgroundColor: "#C9B59C",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  {item.ml} ml - ₹{Math.round(Number(item.price))}
+                                </Dropdown.Item>
+                              ))
+                            ) : (
+                              <Dropdown.Item style={{ color: "#F9F8F6", backgroundColor: "#C9B59C" }}>
+                                No options
+                              </Dropdown.Item>
+                            )}
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </div>
                     </Card.Body>
                   </Card>
                 </Col>
